@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pantalla registrar causa</title>
+</head>
+<body>
+    <div class="contenedor-general">
+
+        <main>
+            <h2>Nueva Causa</h2>
+            <section class="seccion-datos">
+                <p>Número de causa: </p>
+                <p>Nombre de causa: </p>
+                <p>Cliente asociado (DNI): </p>
+                <p>Número de radicación: </p>
+                <div class="lista-desplegable">
+                    <label for="tipoCausa">Tipo de causa:</label>
+                    <select id="tipoCausa" name="tipoCausa">
+                        <option value="laboral">Laboral</option>
+                        <option value="civil">Civil</option>
+                        <option value="penal">Penal</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="familiar">Familiar</option>
+                        <option value="administrativo">Administrativo</option>
+                        <option value="constitucional">Constitucional</option>
+                        <option value="tributario">Tributario</option>
+                        <option value="ambiental">Ambiental</option>
+                        <option value="propiedadIntelectualIndustrial">Propiedad intelectual o industrial</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="lista-desplegable">
+                        <label for="estadoCausa">Estado inicial:</label>
+                        <select id="estadoCausa" name="estadoCausa">
+                            <option value="abierta">Abierta</option>
+                            <option value="enCurso">En curso</option>
+                            <option value="enMediacion">En mediación</option>
+                            <option value="enJuicio">En juicio</option>
+                            <option value="enApelacion">En apelación</option>
+                            <option value="conSentencia">Con sentencia</option>
+                            <option value="finalizada">Finalizada</option>
+                            <option value="archivada">Archivada</option>
+                            <option value="cerrada">Cerrada</option>
+                            <option value="cancelada">Cancelada</option>
+                        </select>
+                </div>
+                <p>Fecha de inicio: </p>
+                <div class="input-descripcion">
+                    <label for="descripcionCausa">Descripción breve (opcional):</label>
+                    <textarea id="descripcionCausa" name="descripcionCausa" rows="4" placeholder="Escribe una breve descripción..."></textarea>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <button>Guardar cambios</button>
+            <button class="boton-cancelar">Cancelar</button>
+        </footer>
+
+    </div>
+</body>
+</html>

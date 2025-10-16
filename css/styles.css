@@ -1,0 +1,95 @@
+/*=======================
+        GENERALES
+=======================*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdcdf;
+}
+
+
+.contenedor-general {
+    width: 400px;
+    height: 500px;
+    border: 1px solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/*=======================
+        MAIN
+=======================*/
+
+main {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.seccion-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.seccion-datos p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.lista-desplegable {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*=======================
+        FOOTER
+=======================*/
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.boton-cancelar {
+    margin-right: 5px;
+    background-color: #cc4f4f;
+    color: white;
+    border: none;
+}
+
+button {
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: #c5c9ce; /* un gris más oscuro */
+    transform: scale(1.05);   /* agranda un poco */
+}
